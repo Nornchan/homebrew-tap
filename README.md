@@ -1,5 +1,7 @@
 # homebrew-tap
 
+[![Release](https://img.shields.io/github/v/release/Nornchan/webpage2pdf)](https://github.com/Nornchan/webpage2pdf/releases/latest)
+
 Homebrew tap for [webpage2pdf](https://github.com/Nornchan/webpage2pdf) —
 turns web pages into clean A4 PDFs that read like typeset essays.
 
