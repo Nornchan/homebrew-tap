@@ -16,6 +16,20 @@ That puts three commands on your `PATH`: `webpage2pdf`, the shorter alias
 
 ## Changelog
 
+### [v0.1.3](https://github.com/Nornchan/webpage2pdf/releases/tag/v0.1.3) — 2026-09-08
+
+Fixes a real supply-chain risk in `--doctor --fix`: a fallback path could
+guess `pip install webpage2pdf`, which is an unrelated package on PyPI. Never
+guesses an install target now. If you're on 0.1.1 or 0.1.2,
+`brew upgrade webpage2pdf` picks this up.
+
+### [v0.1.2](https://github.com/Nornchan/webpage2pdf/releases/tag/v0.1.2) — 2026-09-08
+
+Fixes a real installation-breaking bug on Python 3.10 via pip (`tomllib` is
+stdlib only from 3.11; every command failed immediately on 3.10). Only
+affects a plain `pip install -e .` from source, not this tap — Homebrew's
+formula always builds against Python 3.13.
+
 ### [v0.1.1](https://github.com/Nornchan/webpage2pdf/releases/tag/v0.1.1) — 2026-09-07
 
 Homebrew packaging fix — the formula did not actually build from source.
